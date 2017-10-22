@@ -11,3 +11,8 @@
 // AdminLTE
 @import "~admin-lte/dist/css/AdminLTE.css";
 @import "~admin-lte/dist/css/skins/_all-skins.css";
+
+// Font Awesome
+$fa-font-path: "../../../node_modules/font-awesome/fonts" !default;
+
+@import 'node_modules/font-awesome/scss/font-awesome.scss';
