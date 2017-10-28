@@ -12,4 +12,7 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+  .sass('resources/assets/sass/app.scss', 'public/css')
+  // .js('node_modules/admin-lte/dist/js/adminlte.js', 'public/js/admin-lte.js')
+  .styles(['node_modules/admin-lte/dist/css/AdminLTE.css', 'node_modules/admin-lte/dist/css/skins/_all-skins.css'], 'public/css/admin-lte.css');
+

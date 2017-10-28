@@ -6,14 +6,3 @@
  */
 
 require('./bootstrap');
-
-// Fix Sidebar AdminLTE
-$('.sidebar-toggle').on('click',function(){ 
-  var cls = $('body').hasClass('sidebar-collapse');
-  
-  if(cls == true){
-    $('body').removeClass('sidebar-collapse sidebar-open');
-  } else {
-    $('body').addClass('sidebar-collapse sidebar-open');
-  }
-});
