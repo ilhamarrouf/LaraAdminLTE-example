@@ -4,7 +4,7 @@
       <div class="pull-left image">
         <img src="https://www.safeocs.gov/cos/resources/app/images/av1_1.png" class="img-circle" alt="User Image">
       </div>
-      <div class="pull-left info" style="padding-top: 15px; padding-left: 10px">
+      <div class="pull-left info" style="padding-top: 16px; padding-left: 10px">
         <p>{{ Auth::user()->name }}</p>
       </div>
     </div>
@@ -26,21 +26,6 @@
           <li><a href="#"><i class="fa fa-circle-o"></i> Moderator</a></li>
           <li><a href="#"><i class="fa fa-circle-o"></i> User</a></li>
         </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fa fa-gears"></i>
-          <span>Pengaturan</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-          <i class="fa fa-sign-out"></i> 
-          <span>Keluar</span>
-        </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-          {{ csrf_field() }}
-        </form>
       </li>
     </ul>
   </section>

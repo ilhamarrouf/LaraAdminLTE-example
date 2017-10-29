@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Dashboard')
 
-@section('content')
-    {{-- Content in here --}}
+@section('content-header')
+  <h1>@yield('title')</h1>
 @endsection
