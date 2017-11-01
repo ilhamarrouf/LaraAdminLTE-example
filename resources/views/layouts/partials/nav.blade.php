@@ -9,37 +9,15 @@
     </a>
     <div class="navbar-custom-menu">
       <ul class="nav navbar-nav">
-        <li class="dropdown user user-menu">
-          <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true">
-            <img class="user-image" src="http://bit.ly/2yU4teA" alt="User Image">
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu" style="width: 100px" role="menu">
-            <li>
-              <a href="#">
-                <i class="fa fa-user"></i> 
-                <span>Profil</span>
-              </a>
-            </li>
-            <li class="divider" style="margin: 0px 0px"></li>
-            <li>
-              <a href="#">
-                <i class="fa fa-gear"></i>
-                <span>Pengaturan</span>
-              </a>
-            </li>
-            <li class="divider" style="margin: 0px 0px"></li>
-            <li>
-              <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                <i class="fa fa-sign-out"></i> 
-                <span>Keluar</span>
+        <li>
+          <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+            <i class="fa fa-power-off"></i> 
+            <span>Keluar</span>
 
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none">
-                  {{ csrf_field() }}
-                </form>
-              </a>
-            </li>
-          </ul>
+            <form id="logout-form" action="http://motionadsapp.firzil.mlopp.com/logout" method="POST" style="display: none">
+              <input type="hidden" name="_token" value="BmHks7TAkXNW78Gdz3EtRdKgTyQxwlemKP6ypFto">
+            </form>
+          </a>
         </li>
       </ul>
     </div>
